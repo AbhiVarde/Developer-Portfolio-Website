@@ -19,6 +19,18 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
     const url = "./Abhi Varde - Resume.pdf";
     window.open(url, "_blank");
   };
+  const handleSkill = () => {
+    navigate("/skill");
+    setToggle(!toggle);
+  };
+  const handleProject = () => {
+    navigate("/project");
+    setToggle(!toggle);
+  };
+  const handleAbout = () => {
+    navigate("/about");
+    setToggle(!toggle);
+  };
 
   return (
     <div className="relative">
@@ -87,7 +99,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
           className={`block py-2 border-b ${
             darkMode ? "border-gray-500" : "border-gray-300"
           }`}
-          onClick={() => navigate("/skill")}
+          onClick={handleSkill}
         >
           Skills
         </p>
@@ -95,7 +107,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
           className={`block py-2 border-b ${
             darkMode ? "border-gray-500" : "border-gray-300"
           }`}
-          onClick={() => navigate("/project")}
+          onClick={handleProject}
         >
           Projects
         </p>
@@ -103,7 +115,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
           className={`block py-2 border-b ${
             darkMode ? "border-gray-500" : "border-gray-300"
           }`}
-          onClick={() => navigate("/about")}
+          onClick={handleAbout}
         >
           About me
         </p>

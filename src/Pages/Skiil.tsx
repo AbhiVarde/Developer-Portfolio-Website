@@ -43,7 +43,7 @@ const Skill = ({ darkMode }: any) => {
     },
     {
       name: "MySQL",
-      icon: <SiMysql size={30} color="#3c7c70" />,
+      icon: <SiMysql size={30} color="#f29111" />,
     },
     { name: "MongoDB", icon: <DiMongodb size={30} color="#47A248" /> },
     {
