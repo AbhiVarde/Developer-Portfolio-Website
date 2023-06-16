@@ -1,6 +1,7 @@
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "../components/RainbowHghlight";
 import { BsArrow90DegUp } from "react-icons/bs";
+import Profile from "../assets/images/abhi.jpg";
 
 const Home = ({ darkMode }: any) => {
   const data = [
@@ -27,7 +28,7 @@ const Home = ({ darkMode }: any) => {
               darkMode ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            Design stunning web designs that enhance your online presence,
+            Craft remarkable web designs that enhance your online presence,
             providing user-friendly experiences across all platforms.
           </p>
           <RoughNotationGroup show={true}>
@@ -59,7 +60,7 @@ const Home = ({ darkMode }: any) => {
           <div className="w-3/4 mx-auto flex flex-col sm:items-center lg:block">
             <div>
               <img
-                src="./abhi.jpg"
+                src={Profile}
                 alt="avatar"
                 className="rounded-lg shadow-md sm:h-[440px] sm:w-[380px] lg:h-[480px] lg:w-[400px] lg:ml-7"
               />

@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RiMoonFill, RiSunFill } from "react-icons/ri";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
+import resume from "../assets/documents/Abhi Varde - Resume.pdf";
 
 const Navbar = ({ darkMode, toggleDarkMode }: any) => {
   const [toggle, setToggle] = useState(false);
   const [click, setClick] = useState(false);
   const navigate = useNavigate();
+
+  const activeLink = "text-[#10B981] font-bold";
 
   const handleToggle = () => setToggle(!toggle);
 
@@ -16,9 +19,9 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
   };
 
   const handlePDF = () => {
-    const url = "./Abhi Varde - Resume.pdf";
-    window.open(url, "_blank");
+    window.open(resume, "_blank");
   };
+
   const handleSkill = () => {
     navigate("/skill");
     setToggle(!toggle);
@@ -69,9 +72,27 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
               darkMode ? "text-white" : ""
             }`}
           >
-            <p onClick={() => navigate("/skill")}>Skills</p>
-            <p onClick={() => navigate("/project")}>Projects</p>
-            <p onClick={() => navigate("/about")}>About me</p>
+            <NavLink
+              to="/skill"
+              className={({ isActive }) => (isActive ? activeLink : "")}
+              onClick={handleSkill}
+            >
+              <p>Skills</p>
+            </NavLink>
+            <NavLink
+              to="/project"
+              className={({ isActive }) => (isActive ? activeLink : "")}
+              onClick={handleProject}
+            >
+              <p>Projects</p>
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? activeLink : "")}
+              onClick={handleAbout}
+            >
+              <p>About me</p>
+            </NavLink>
           </div>
           <div className="hidden md:flex items-center gap-5">
             <div onClick={handleClick} className="cursor-pointer">

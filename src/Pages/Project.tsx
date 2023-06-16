@@ -1,9 +1,10 @@
-import MentorsDiary from "../assets/images/MentorsDiary.png";
-import Jukebox from "../assets/images/Jukebox.png";
-import PromptResume from "../assets/images/PromptResume.png";
-import NewsXpress from "../assets/images/news.png";
-import DevGlimpse from "../assets/images/DevGlimpse.png";
-import skyline from "../assets/images/skyline.png";
+import Jukebox from "../assets/projects/Jukebox.png";
+import MentorsDiary from "../assets/projects/MentorsDiary.png";
+import skyline from "../assets/projects/skyline.png";
+import PromptResume from "../assets/projects/PromptResume.png";
+import DevGlimpse from "../assets/projects/DevGlimpse.png";
+import NewsXpress from "../assets/projects/news.png";
+import { FiChevronDown } from "react-icons/Fi";
 
 const projects = [
   {
@@ -12,6 +13,7 @@ const projects = [
     description:
       "Spotify music player web app with React, Tailwind CSS. Search, play, and discover tracks effortlessly.",
     tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Spotify API"],
+    link: "https://jukebox-xi.vercel.app/",
   },
   {
     image: MentorsDiary,
@@ -26,6 +28,7 @@ const projects = [
       "Tailwind CSS",
       "Rest APIs",
     ],
+    link: "https://mentorsdiary.netlify.app/",
   },
   {
     image: skyline,
@@ -33,6 +36,7 @@ const projects = [
     description:
       "Developed a dynamic weather forecast web app providing real-time information, and a seamless experience.",
     tags: ["HTML", "CSS", "JavaScript", "Open Weather API"],
+    link: "https://skyline-web.netlify.app/",
   },
   {
     image: PromptResume,
@@ -40,6 +44,7 @@ const projects = [
     description:
       "Resume generator web app with OpenAI API, React, deployed on Vercel. Stand out with a personalized resume.",
     tags: ["React", "Vite", "Typescript", "TailwindCSS", "OpenAI API"],
+    link: "https://prompt-resume.vercel.app/",
   },
   {
     image: DevGlimpse,
@@ -47,6 +52,7 @@ const projects = [
     description:
       " Discover GitHub Finder web app with GitHub API, React, Tailwind CSS. Collaborate with programmers.",
     tags: ["React", "Vite", "Typescript", "TailwindCSS", "Github API"],
+    link: "https://devglimplse.vercel.app/",
   },
   {
     image: NewsXpress,
@@ -54,8 +60,13 @@ const projects = [
     description:
       "Real-time news web app with News API. Stay effortlessly informed with our powerful news web app.",
     tags: ["React", "JavaScript", "Bootstrap", "News API"],
+    link: "https://github.com/AbhiVarde/React-News-App",
   },
 ];
+
+const handleProjectClick = (link: any) => {
+  window.open(link, "_blank");
+};
 
 const Project = ({ darkMode }: any) => {
   return (
@@ -75,6 +86,7 @@ const Project = ({ darkMode }: any) => {
             shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-4 w-full relative transition-all duration-200 ease-in-out ${
               darkMode ? "border-zinc-700" : "border-gray-300"
             }`}
+            onClick={() => handleProjectClick(project.link)}
           >
             <span
               className={`absolute w-[90%] -top-px left-px h-[2px] bg-gradient-to-r ${
@@ -114,7 +126,7 @@ const Project = ({ darkMode }: any) => {
                       darkMode
                         ? "border border-zinc-700 text-gray-300 bg-transparent"
                         : "bg-gray-100 text-gray-700"
-                    }  rounded-md text-xs italic mr-2 px-1`}
+                    }  rounded-md text-xs tracking-wide italic mr-2 px-1`}
                   >
                     {tag}
                   </p>
@@ -124,6 +136,16 @@ const Project = ({ darkMode }: any) => {
           </div>
         ))}
       </div>
+      <a
+        type="button"
+        className={`flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium ${
+          darkMode ? "text-gray-100" : "text-gray-900"
+        }`}
+        href="https://github.com/AbhiVarde"
+      >
+        See more
+        <FiChevronDown className="h-4 w-4 ml-1 items-center" />
+      </a>
     </div>
   );
 };

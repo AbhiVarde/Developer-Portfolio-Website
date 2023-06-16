@@ -24,7 +24,7 @@ function App() {
         <div className="sticky top-0 z-50">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         </div>
-        <div className="flex-grow px-8 overflow-y-auto">
+        <div className="flex-grow px-8">
           <Routes>
             <Route path="/" element={<Home darkMode={darkMode} />} />
             <Route path="/skill" element={<Skill darkMode={darkMode} />} />
