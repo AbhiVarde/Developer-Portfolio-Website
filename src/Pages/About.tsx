@@ -1,6 +1,6 @@
 import python from "../assets/blogs/python.jpg";
 import node from "../assets/blogs/node.jpg";
-import { FiChevronDown } from "react-icons/Fi";
+import { FiChevronDown } from "react-icons/fi";
 
 const experiences = [
   {

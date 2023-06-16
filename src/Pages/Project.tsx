@@ -4,7 +4,7 @@ import skyline from "../assets/projects/skyline.png";
 import PromptResume from "../assets/projects/PromptResume.png";
 import DevGlimpse from "../assets/projects/DevGlimpse.png";
 import NewsXpress from "../assets/projects/news.png";
-import { FiChevronDown } from "react-icons/Fi";
+import { FiChevronDown } from "react-icons/fi";
 
 const projects = [
   {
