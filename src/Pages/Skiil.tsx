@@ -8,6 +8,8 @@ import {
   SiGit,
   SiGithub,
   SiGitlab,
+  SiHtml5,
+  SiCss3,
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 
@@ -97,6 +99,8 @@ const Skill = ({ darkMode }: any) => {
       ),
     },
     { name: "GitLab", icon: <SiGitlab size={30} color="#FCA121" /> },
+    { name: "HTML", icon: <SiHtml5 size={30} color="#E34F26" /> },
+    { name: "CSS", icon: <SiCss3 size={30} color="#1572B6" /> },
   ];
 
   return (
@@ -114,8 +118,8 @@ const Skill = ({ darkMode }: any) => {
           <div
             key={skill.name}
             className={`border border-opacity-90 hover:border-gray-500 hover:border-opacity-100 
-            shadow-md hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-4 w-full flex justify-between items-center transition-all duration-200 ease-in-out ${
-              darkMode ? "border-zinc-800" : "border-gray-200"
+            shadow-lg hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-4 w-full flex justify-between items-center transition-all duration-200 ease-in-out ${
+              darkMode ? "border-zinc-700" : "border-gray-300"
             }`}
           >
             <span

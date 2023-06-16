@@ -54,7 +54,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
             className="cursor-pointer text-lg md:text-xl font-bold"
             onClick={() => navigate("/")}
           >
-            Abhi Varde
+            AbhiVarde.{" "}
           </div>
           <div
             className={`md:hidden text-lg rounded-md p-2 cursor-pointer ${
