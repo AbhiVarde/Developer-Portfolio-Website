@@ -18,6 +18,11 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
     toggleDarkMode();
   };
 
+  const handlelogoClick = () => {
+    setToggle(!toggle);
+    navigate("/");
+  };
+
   const handlePDF = () => {
     window.open(resume, "_blank");
   };
@@ -55,7 +60,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
           </div>
           <div
             className="cursor-pointer text-lg md:text-xl font-bold"
-            onClick={() => navigate("/")}
+            onClick={handlelogoClick}
           >
             AbhiVarde.{" "}
           </div>
