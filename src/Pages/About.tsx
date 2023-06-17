@@ -1,6 +1,7 @@
 import python from "../assets/blogs/python.jpg";
 import node from "../assets/blogs/node.jpg";
 import { FiChevronDown } from "react-icons/fi";
+import { BiMessageSquareDetail } from "react-icons/bi";
 
 const experiences = [
   {
@@ -62,12 +63,12 @@ const About = ({ darkMode }: any) => {
           Abhi Varde
         </h1>
         <p className={`mb-2 ${darkMode ? "text-zinc-400" : "text-zinc-900"} `}>
-          Passionate Frontend Software Engineer skilled in creating engaging
-          user experiences for web applications. I like to work on exciting
+          🚀 Passionate Frontend Software Engineer🔥skilled in creating engaging
+          user experiences for web applications.I like to work on exciting
           projects on both the Frontend and the Backend.
         </p>
         <p className={`mb-2 ${darkMode ? "text-zinc-400" : "text-zinc-900"} `}>
-          Current Focus:{" "}
+          🎯Current Focus:{" "}
           <span className={` ${darkMode ? "text-white" : "text-black"}`}>
             Frontend
           </span>
@@ -97,11 +98,68 @@ const About = ({ darkMode }: any) => {
               Twitter
             </span>
           </a>{" "}
-          for more updates and memes.
+          for more updates and memes.😄
         </p>
       </div>
       <h1
-        className={`font-bold text-2xl md:text-4xl tracking-tight mb-4 ${
+        className={`font-bold text-2xl md:text-4xl tracking-tight mb-2${
+          darkMode ? "text-white" : "text-black"
+        }`}
+      >
+        Recent Blogs.
+      </h1>
+      <p className={`pt-2 ${darkMode ? "text-gray-400" : "text-gray-600"}`}>
+        👩‍💻I've explored various technologies and wanted to share my experience
+        with you! ✨
+      </p>
+      {blogs.map((blog, index) => (
+        <div
+          key={index}
+          className={`border border-opacity-90 hover:border-gray-500 hover:border-opacity-100 
+      shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-3 mt-4 w-full relative transition-all duration-200 ease-in-out ${
+        darkMode ? "border-zinc-700" : "border-gray-300"
+      }`}
+        >
+          <a
+            href=""
+            className="flex flex-col md:flex-row space-x-0 md:space-x-4"
+          >
+            <img
+              src={blog.img}
+              className="rounded-md w-full sm:h-64 md:h-auto object-cover md:w-72 mb-4 md:mb-0"
+              alt={blog.title}
+            />
+            <div className="flex flex-col justify-center">
+              <h4
+                className={`font-bold text-xl tracking-tight mb-2 ${
+                  darkMode ? "text-gray-100" : "text-gray-900"
+                }`}
+              >
+                {blog.title}
+              </h4>
+              <p
+                className={`text-sm ${
+                  darkMode ? "text-zinc-400" : "text-zinc-900"
+                }`}
+              >
+                {blog.description}
+              </p>
+            </div>
+          </a>
+        </div>
+      ))}
+      <a
+        type="button"
+        className={`flex items-center text-sm my-4 mx-auto px-4 py-1 rounded-md font-medium ${
+          darkMode ? "text-gray-100" : "text-gray-900"
+        }`}
+        href="https://abhivarde.hashnode.dev/"
+      >
+        See more
+        <FiChevronDown className="h-4 w-4 ml-1 items-center" />
+      </a>
+      <h1
+        className={`font-bold text-2xl md:text-4xl tracking-tight mb-2 ${
           darkMode ? "text-white" : "text-black"
         }`}
       >
@@ -109,13 +167,13 @@ const About = ({ darkMode }: any) => {
       </h1>
       <p className={`${darkMode ? "text-gray-400" : "text-gray-600"}`}>
         These are the companies that I have worked in and was able to gain
-        experience from.
+        experience from. 💼✨
       </p>
       {experiences.map((experience, index) => (
         <div
           key={index}
           className={`border border-opacity-90 hover:border-gray-500 hover:border-opacity-100 
-            shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-4 mt-4 w-full relative transition-all duration-200 ease-in-out ${
+            shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-4 mt-4 mb-6 w-full relative transition-all duration-200 ease-in-out ${
               darkMode ? "border-zinc-700" : "border-gray-300"
             }`}
         >
@@ -171,21 +229,16 @@ const About = ({ darkMode }: any) => {
         </div>
       ))}
       <h1
-        className={`font-bold text-2xl md:text-4xl tracking-tight my-4 ${
+        className={`font-bold text-2xl md:text-4xl tracking-tight mb-2 ${
           darkMode ? "text-white" : "text-black"
         }`}
       >
-        Recent Blogs.
+        Upcoming Projects.
       </h1>
-      <p className={`${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-        I've explored various technologies and wanted to share my experience
-        with you.
-      </p>
-      {blogs.map((blog, index) => (
+      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
         <div
-          key={index}
           className={`border border-opacity-90 hover:border-gray-500 hover:border-opacity-100 
-            shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-3 mt-4 w-full relative transition-all duration-200 ease-in-out ${
+            shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-4 w-full relative transition-all duration-200 ease-in-out ${
               darkMode ? "border-zinc-700" : "border-gray-300"
             }`}
         >
@@ -203,81 +256,79 @@ const About = ({ darkMode }: any) => {
                 : "from-blue-500/0 via-blue-500/40 to-blue-500/0"
             }`}
           ></span>
-          <a
-            href=""
-            className="flex flex-col md:flex-row space-x-0 md:space-x-4"
+          <div
+            className={`h-8 w-8 mb-2 text-3xl font-bold tracking-tight ${
+              darkMode ? "text-gray-100" : "text-gray-900"
+            }`}
           >
-            <img src={blog.img} className="rounded-md w-72 mb-4 md:mb-0" />
-            <div>
-              <h4
-                className={`font-bold text-base md:text-xl tracking-tight mb-2 ${
-                  darkMode ? "text-gray-100" : "text-gray-900"
-                }`}
-              >
-                {blog.title}
-              </h4>
-              <p
-                className={` ${
-                  darkMode ? "text-zinc-400" : "text-zinc-900"
-                } text-sm`}
-              >
-                {blog.description}
-              </p>
-            </div>
-          </a>
+            <BiMessageSquareDetail />
+          </div>
+          <h4
+            className={`text-lg font-bold tracking-tight ${
+              darkMode ? "text-gray-100" : "text-gray-900"
+            }`}
+          >
+            More projects coming soon..
+          </h4>
+          <p
+            className={`leading-7 ${
+              darkMode ? "text-gray-300" : "text-gray-700"
+            } pt-2`}
+          >
+            💡 Ideas flow through me all day long! As soon as I dive into one, I
+            make sure to update my creative hub to capture them all.
+          </p>
         </div>
-      ))}
-      <a
-        type="button"
-        className={`flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium ${
-          darkMode ? "text-gray-100" : "text-gray-900"
-        }`}
-        href="https://abhivarde.hashnode.dev/"
-      >
-        See more
-        <FiChevronDown className="h-4 w-4 ml-1 items-center" />
-      </a>
+      </div>
       <h1
-        className={`font-bold text-2xl md:text-4xl tracking-tight my-4 ${
+        className={`font-bold text-2xl md:text-4xl tracking-tight mb-2 mt-5 ${
           darkMode ? "text-white" : "text-black"
         }`}
       >
         Contact me.
       </h1>
-      <p className={`${darkMode ? "text-gray-400" : "text-gray-600"}`}>
+      <p className={`${darkMode ? "text-zinc-400" : "text-zinc-900"}`}>
         Email me for inquiries or discussions.
       </p>
       <div
-        className={`border  rounded p-6 my-4 w-full ${
+        className={`border rounded p-6 my-6 w-full ${
           darkMode
-            ? "border-gray-800 bg-[#c0e9d4]"
-            : "bg-[#e0f4e9] border-teal-200"
-        } `}
+            ? "border-gray-700 bg-gray-800"
+            : "border-teal-200 bg-teal-50"
+        }`}
       >
-        <p className="my-1 text-gray-800 dark:text-gray-200">
+        <p
+          className={`my-2 text-gray-200 ${
+            darkMode ? "text-gray-200" : "text-gray-700"
+          }`}
+        >
           Leave your email ID, and I'll reach out to you.
         </p>
         <form className="relative my-4">
-          <input
-            type="email"
-            aria-label="Email for newsletter"
-            placeholder="abhi@icloud.com"
-            autoComplete="email"
-            required
-            className={`px-4 py-2 mt-1 focus:ring-teal-500 focus:border-teal-500 block w-full border-gray-300 rounded-md ${
-              darkMode ? "bg-gray-800 text-gray-100" : "bg-white text-gray-900"
-            } `}
-          />
-          <button
-            className={`flex items-center justify-center absolute right-1 top-1 px-4 font-bold h-8 ${
-              darkMode
-                ? "bg-gray-700 text-gray-100"
-                : "bg-gray-100 text-gray-900"
-            } rounded w-28`}
-            type="submit"
-          >
-            Send
-          </button>
+          <div className="flex items-center">
+            <input
+              type="email"
+              aria-label="Email for newsletter"
+              placeholder="abhi@icloud.com"
+              autoComplete="email"
+              required
+              className={`px-4 py-2 mt-1 border block w-full rounded-md ${
+                darkMode
+                  ? "bg-gray-700 text-gray-100 border-zinc-700"
+                  : "bg-white text-gray-900 border-gray-200"
+              }`}
+            />
+            <button
+              className={`ml-4 flex-shrink-0 px-6 py-2 font-semibold rounded-md transition-colors duration-300 ${
+                darkMode
+                  ? "bg-teal-500 text-gray-100 hover:bg-teal-600 focus:bg-teal-700"
+                  : "bg-teal-300 text-gray-900 hover:bg-teal-400 focus:bg-teal-500"
+              }`}
+              type="submit"
+            >
+              Send
+            </button>
+          </div>
         </form>
       </div>
     </div>

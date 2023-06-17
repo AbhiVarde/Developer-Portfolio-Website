@@ -109,9 +109,9 @@ const Skill = ({ darkMode }: any) => {
         Take a look at my Skills.
       </h1>
       <p className={`${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-        These are my developing skills, consisting of various technologies and
+        🌐These are my developing skills, consisting of various technologies and
         programming languages that I have learned and consistently update as I
-        make progress.
+        make progress.🌱
       </p>
       <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
         {skills.map((skill) => (

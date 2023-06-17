@@ -75,7 +75,7 @@ const Project = ({ darkMode }: any) => {
         These are my Projects.
       </h1>
       <p className={`${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-        Here are a few fictional projects I've worked on. These projects were
+        🔄 Here are a few fictional projects I've worked on. These projects were
         created to enhance my understanding of the technologies I use.
       </p>
       <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RiMoonFill, RiSunFill } from "react-icons/ri";
 import { useNavigate, NavLink } from "react-router-dom";
-import resume from "../assets/documents/Abhi Varde - Resume.pdf";
+import resume from "../assets/documents/Abhi Varde - Resume .pdf";
 
 const Navbar = ({ darkMode, toggleDarkMode }: any) => {
   const [toggle, setToggle] = useState(false);
