@@ -53,6 +53,8 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
           <div
             className={`block text-lg md:hidden cursor-pointer transition-transform duration-700 ${
               click ? "rotate-180" : "rotate-0"
+            } p-2 rounded-full ${
+              darkMode ? "bg-[#1f2937] text-white" : "bg-[#e5e7eb] text-black"
             }`}
             onClick={handleClick}
           >
@@ -100,7 +102,14 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
             </NavLink>
           </div>
           <div className="hidden md:flex items-center gap-5">
-            <div onClick={handleClick} className="cursor-pointer">
+            <div
+              onClick={handleClick}
+              className={`cursor-pointer p-2 rounded-full transition-transform duration-700 ${
+                click ? "rotate-180" : "rotate-0"
+              } ${
+                darkMode ? "bg-[#1f2937] text-white" : "bg-[#e5e7eb] text-black"
+              }`}
+            >
               {click ? <RiSunFill /> : <RiMoonFill />}
             </div>
             <button

@@ -63,7 +63,7 @@ const About = ({ darkMode }: any) => {
           Abhi Varde
         </h1>
         <p className={`mb-2 ${darkMode ? "text-zinc-400" : "text-zinc-900"} `}>
-          🚀 Passionate Frontend Software Engineer🔥skilled in creating engaging
+          🚀 Passionate Frontend Software Engineer skilled in creating engaging
           user experiences for web applications.I like to work on exciting
           projects on both the Frontend and the Backend.
         </p>
@@ -120,6 +120,20 @@ const About = ({ darkMode }: any) => {
         darkMode ? "border-zinc-700" : "border-gray-300"
       }`}
         >
+          <span
+            className={`absolute w-[90%] -top-px left-px h-[2px] bg-gradient-to-r ${
+              darkMode
+                ? "from-blue-400/0 via-blue-400/40 to-blue-400/0"
+                : "from-blue-500/0 via-blue-500/40 to-blue-500/0"
+            }`}
+          ></span>
+          <span
+            className={`absolute w-[90%] -bottom-px right-px h-[2px] bg-gradient-to-r ${
+              darkMode
+                ? "from-blue-400/0 via-blue-400/40 to-blue-400/0"
+                : "from-blue-500/0 via-blue-500/40 to-blue-500/0"
+            }`}
+          ></span>
           <a
             href=""
             className="flex flex-col md:flex-row space-x-0 md:space-x-4"
