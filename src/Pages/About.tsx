@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import python from "../assets/blogs/python.jpg";
 import node from "../assets/blogs/node.jpg";
 import { FiChevronDown } from "react-icons/fi";
@@ -52,6 +53,10 @@ const blogs = [
 ];
 
 const About = ({ darkMode }: any) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="flex flex-col max-w-2xl mx-auto mt-4 md:mt-10">
       <div className="mb-6">
