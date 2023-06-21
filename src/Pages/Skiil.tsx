@@ -18,6 +18,7 @@ const Skill = ({ darkMode }: any) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
   const skills = [
     { name: "React", icon: <FaReact size={30} color="#61DAFB" /> },
     { name: "Node.js", icon: <FaNodeJs size={30} color="#339933" /> },

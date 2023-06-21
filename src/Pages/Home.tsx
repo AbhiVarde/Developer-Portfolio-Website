@@ -2,6 +2,7 @@ import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "../components/RainbowHghlight";
 import { BsArrow90DegUp } from "react-icons/bs";
 import Profile from "../assets/images/abhi.jpg";
+import { useEffect } from "react";
 
 const Home = ({ darkMode }: any) => {
   const data = [
@@ -10,6 +11,10 @@ const Home = ({ darkMode }: any) => {
     { text: "Programmer.", color: "#10B981" },
     { text: "Learner.", color: "#3B82F6" },
   ];
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   return (
     <div className="flex flex-col max-w-7xl mx-auto mt-6 md:mt-10">
