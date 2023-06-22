@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import python from "../assets/blogs/python.jpg";
+import react from "../assets/blogs/react.png";
 import node from "../assets/blogs/node.jpg";
 import { FiChevronDown } from "react-icons/fi";
 import { BiMessageSquareDetail } from "react-icons/bi";
@@ -38,12 +38,11 @@ const experiences = [
 
 const blogs = [
   {
-    img: python,
-    title:
-      "How do I use Python to implement ceaser cipher encryption and decryption?",
+    img: react,
+    title: "How to Build a Chatbot with React JS",
     description:
-      "We'll learn about the ceaser cipher and how to encrypt and decrypt data with it in Python. Let's get this learning process started. What is the...",
-    Link: "https://abhivarde.hashnode.dev/how-do-i-use-python-to-implement-ceaser-cipher-encryption-and-decryption",
+      "👋 Hello Everyone!👨‍💻 I'm Abhi, and it's a pleasure to meet you all. In this article, I'll guide you through the process of creating a chatbot using React JS.",
+    Link: "https://abhivarde.hashnode.dev/how-to-build-a-chatbot-with-react-js",
   },
   {
     img: node,
