@@ -324,7 +324,7 @@ const About = ({ darkMode }: any) => {
         >
           Leave your email ID, and I'll reach out to you.
         </p>
-        <form className="relative my-4">
+        <form className="relative my-4" action="mailto: abhivarde@icloud.com">
           <div className="flex items-center">
             <input
               type="email"
