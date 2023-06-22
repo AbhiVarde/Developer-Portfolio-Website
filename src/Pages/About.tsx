@@ -43,12 +43,14 @@ const blogs = [
       "How do I use Python to implement ceaser cipher encryption and decryption?",
     description:
       "We'll learn about the ceaser cipher and how to encrypt and decrypt data with it in Python. Let's get this learning process started. What is the...",
+    Link: "https://abhivarde.hashnode.dev/how-do-i-use-python-to-implement-ceaser-cipher-encryption-and-decryption",
   },
   {
     img: node,
     title: "How to create your first Node.js web server ?",
     description:
       "Hello Everyone !👋 Abhi here; nice to meet you all. In this article I'm going to walk you through every step you need to take to build your very first..",
+    Link: "https://abhivarde.hashnode.dev/how-to-create-your-first-nodejs-web-server",
   },
 ];
 
@@ -140,7 +142,7 @@ const About = ({ darkMode }: any) => {
             }`}
           ></span>
           <a
-            href=""
+            href={blog.Link}
             className="flex flex-col md:flex-row space-x-0 md:space-x-4"
           >
             <img
