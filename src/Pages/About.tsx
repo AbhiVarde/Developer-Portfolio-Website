@@ -58,6 +58,22 @@ const About = ({ darkMode }: any) => {
     window.scrollTo(0, 0);
   }, []);
 
+  const submitForm = (event: any) => {
+    event.preventDefault();
+    const email = event.target.elements.email.value;
+    const recipient = email.endsWith("@gmail.com")
+      ? "abhivarde@gmail.com"
+      : email.endsWith("@icloud.com")
+      ? "abhivarde@icloud.com"
+      : null;
+
+    if (recipient) {
+      window.location.href = "mailto:" + recipient;
+    } else {
+      // Handle other email domains or show an error message
+    }
+  };
+
   return (
     <div className="flex flex-col max-w-2xl mx-auto mt-4 md:mt-10">
       <div className="mb-6">
@@ -324,11 +340,12 @@ const About = ({ darkMode }: any) => {
         >
           Leave your email ID, and I'll reach out to you.
         </p>
-        <form className="relative my-4" action="mailto: abhivarde@icloud.com">
+        <form className="relative my-4" onSubmit={() => submitForm(event)}>
           <div className="flex items-center">
             <input
               type="email"
               aria-label="Email for newsletter"
+              name="email"
               placeholder="abhi@icloud.com"
               autoComplete="email"
               required
