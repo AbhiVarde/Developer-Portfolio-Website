@@ -131,8 +131,8 @@ const About = ({ darkMode }: any) => {
         Recent Blogs.
       </h1>
       <p className={`pt-2 ${darkMode ? "text-gray-400" : "text-gray-600"}`}>
-        👩‍💻I've explored various technologies and wanted to share my experience
-        with you! ✨
+        👨‍💻I've explored various technologies and wanted to share my experience
+        with you!
       </p>
       {blogs.map((blog, index) => (
         <div
