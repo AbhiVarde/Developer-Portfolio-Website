@@ -6,10 +6,10 @@ import { useEffect } from "react";
 
 const Home = ({ darkMode }: any) => {
   const data = [
-    { text: "Developer.", color: "#F59E0B" },
-    { text: "Designer.", color: "#84CC16" },
-    { text: "Programmer.", color: "#10B981" },
-    { text: "Learner.", color: "#3B82F6" },
+    { text: "Developer.", color: "#FF6F61" },
+    { text: "Designer.", color: "#FFD166" },
+    { text: "Programmer.", color: "#06D6A0" },
+    { text: "Learner.", color: "#5851DB" },
   ];
 
   useEffect(() => {
