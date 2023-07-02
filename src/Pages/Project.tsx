@@ -4,17 +4,19 @@ import skyline from "../assets/projects/skyline.png";
 import PromptResume from "../assets/projects/PromptResume.png";
 import DevGlimpse from "../assets/projects/DevGlimpse.png";
 import NewsXpress from "../assets/projects/news.png";
+import CourseExpert from "../assets/projects/CourseExpert.png";
+import SQL from "../assets/projects/SQL.png";
 import { FiChevronDown } from "react-icons/fi";
 import { useEffect } from "react";
 
 const projects = [
   {
-    image: Jukebox,
-    title: "JukeBox",
+    image: CourseExpert,
+    title: "CourseExpert",
     description:
-      "Spotify music player web app with React, Tailwind CSS. Search, play, and discover tracks effortlessly.",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Spotify API"],
-    link: "https://jukebox-xi.vercel.app/",
+      "Unleash your potential through diverse online courses. Achieve goals, enhance skills, and transform education.",
+    tags: ["React", "Vite", "Redux", "TypeScript", "Tailwind CSS"],
+    link: "https://courseexpert.vercel.app/",
   },
   {
     image: MentorsDiary,
@@ -30,6 +32,22 @@ const projects = [
       "Rest APIs",
     ],
     link: "https://mentorsdiary.netlify.app/",
+  },
+  {
+    image: SQL,
+    title: "SQL AI",
+    description:
+      "Supercharge your SQL skills with our AI-powered app. Instantly find answers to your queries.",
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "OpenAI API"],
+    link: "https://sqlai.vercel.app/",
+  },
+  {
+    image: Jukebox,
+    title: "JukeBox",
+    description:
+      "Spotify music player web app with React, Tailwind CSS. Search, play, and discover tracks effortlessly.",
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Spotify API"],
+    link: "https://jukebox-xi.vercel.app/",
   },
   {
     image: skyline,

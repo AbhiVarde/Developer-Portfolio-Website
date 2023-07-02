@@ -6,10 +6,10 @@ import { useEffect } from "react";
 
 const Home = ({ darkMode }: any) => {
   const data = [
-    { text: "Developer.", color: "#FF6F61" },
-    { text: "Designer.", color: "#FFD166" },
-    { text: "Programmer.", color: "#06D6A0" },
-    { text: "Learner.", color: "#5851DB" },
+    { text: "Developer.", color: "#F59E0B" },
+    { text: "Designer.", color: "#84CC16" },
+    { text: "Programmer.", color: "#10B981" },
+    { text: "Learner.", color: "#3B82F6" },
   ];
 
   useEffect(() => {
@@ -19,7 +19,6 @@ const Home = ({ darkMode }: any) => {
   return (
     <div className="flex flex-col max-w-7xl mx-auto mt-6 md:mt-10">
       <div className="flex flex-col justify-center items-center lg:flex-row overflow-hidden">
-        {/* Text container */}
         <div className="w-full sm:w-[85%] my-auto lg:w-1/2 mx-auto text-center lg:text-left lg:p-20">
           <p
             className={`text-2xl md:text-3xl lg:text-4xl font-semibold ${
