@@ -34,7 +34,7 @@ const Footer = ({ darkMode }: any) => {
           <SiReact className="ml-1 mr-1 text-[#087EA4]" />
           <SiTailwindcss className="ml-1 mr-1 text-teal-500" />
           and
-          <AiTwotoneHeart className="ml-1 text-red-500" />
+          <AiTwotoneHeart className="ml-1 text-green-500" />
         </p>
         <div className="flex space-x-28 sm:space-x-48 md:space-x-16 cursor-pointer text-xl">
           <SiLinkedin onClick={handleLink1} />
