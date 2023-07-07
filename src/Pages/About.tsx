@@ -25,7 +25,7 @@ const experiences = [
     role: "Web Development Intern",
     description:
       "As a web development intern, I successfully completed beginner and intermediate challenges.",
-    skills: ["React", "JavaScript", "HTML", "CSS"],
+    skills: ["React", "JavaScript", "HTML", "CSS", "Github"],
   },
   {
     company: "Anon Global foundation",
