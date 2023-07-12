@@ -1,15 +1,31 @@
 import Jukebox from "../assets/projects/Jukebox.png";
 import MentorsDiary from "../assets/projects/MentorsDiary.png";
-import skyline from "../assets/projects/skyline.png";
 import PromptResume from "../assets/projects/PromptResume.png";
 import DevGlimpse from "../assets/projects/DevGlimpse.png";
-import NewsXpress from "../assets/projects/news.png";
 import CourseExpert from "../assets/projects/CourseExpert.png";
 import SQL from "../assets/projects/SQL.png";
+import Git from "../assets/projects/Git Wars.png";
+import Tracker from "../assets/projects/Tracker.png";
 import { FiChevronDown } from "react-icons/fi";
 import { useEffect } from "react";
 
 const projects = [
+  {
+    image: Tracker,
+    title: "SpaceX Launch Tracker",
+    description:
+      "Test your Git skills. Complete tasks, enter commands, and dominate. Become the ultimate Git warrior!",
+    tags: ["full-stack", "React", "Node.js", "JavaScript", "Tailwind CSS"],
+    link: "https://github.com/AbhiVarde/SpaceX-Launch-Tracker",
+  },
+  {
+    image: Git,
+    title: "Git Wars",
+    description:
+      "Test your Git skills. Complete tasks, enter commands, and dominate. Become the ultimate Git warrior!",
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS"],
+    link: "https://gitwars.vercel.app/",
+  },
   {
     image: CourseExpert,
     title: "CourseExpert",
@@ -50,14 +66,6 @@ const projects = [
     link: "https://jukebox-xi.vercel.app/",
   },
   {
-    image: skyline,
-    title: "Skyline",
-    description:
-      "Developed a dynamic weather forecast web app providing real-time information, and a seamless experience.",
-    tags: ["HTML", "CSS", "JavaScript", "Open Weather API"],
-    link: "https://skyline-web.netlify.app/",
-  },
-  {
     image: PromptResume,
     title: "Prompt Resume",
     description:
@@ -72,14 +80,6 @@ const projects = [
       " Discover GitHub Finder web app with GitHub API, React, Tailwind CSS. Collaborate with programmers.",
     tags: ["React", "Vite", "Typescript", "TailwindCSS", "Github API"],
     link: "https://devglimplse.vercel.app/",
-  },
-  {
-    image: NewsXpress,
-    title: "NewsXpress",
-    description:
-      "Real-time news web app with News API. Stay effortlessly informed with our powerful news web app.",
-    tags: ["React", "JavaScript", "Bootstrap", "News API"],
-    link: "https://github.com/AbhiVarde/React-News-App",
   },
 ];
 
