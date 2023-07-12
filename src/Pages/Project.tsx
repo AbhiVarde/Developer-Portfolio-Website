@@ -14,8 +14,8 @@ const projects = [
     image: Tracker,
     title: "SpaceX Launch Tracker",
     description:
-      "Test your Git skills. Complete tasks, enter commands, and dominate. Become the ultimate Git warrior!",
-    tags: ["full-stack", "React", "Node.js", "JavaScript", "Tailwind CSS"],
+      "Stay informed on upcoming spacex launches, countdowns, and missions for cosmic exploration.",
+    tags: ["Full-stack", "React", "Node.js", "JavaScript", "Tailwind CSS"],
     link: "https://github.com/AbhiVarde/SpaceX-Launch-Tracker",
   },
   {
