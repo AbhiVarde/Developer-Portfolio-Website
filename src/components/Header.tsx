@@ -45,7 +45,7 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
       <nav
         className={`py-4 px-6 sm:px-12 border-b-2 backdrop-filter backdrop-blur-lg bg-opacity-80 transition-all duration-200 ease-in-out ${
           darkMode
-            ? "bg-[#18181B] text-white border-gray-800"
+            ? "bg-[#121212] text-white border-gray-800"
             : "bg-white text-black"
         }`}
       >

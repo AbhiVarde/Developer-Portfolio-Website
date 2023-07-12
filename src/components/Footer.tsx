@@ -24,7 +24,7 @@ const Footer = ({ darkMode }: any) => {
     <footer
       className={`relative py-4 px-6 sm:px-12 border-t-2 mt-4 backdrop-filter backdrop-blur-lg bg-opacity-80 transition-all duration-200 ease-in-out ${
         darkMode
-          ? "bg-[#18181B] text-white border-gray-800"
+          ? "bg-[#121212] text-white border-gray-800"
           : "bg-white text-black"
       }`}
     >
