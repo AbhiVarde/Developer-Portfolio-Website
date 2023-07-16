@@ -15,7 +15,14 @@ const projects = [
     title: "SpaceX Launch Tracker",
     description:
       "Stay informed on upcoming spacex launches, countdowns, and missions for cosmic exploration.",
-    tags: ["Full-stack", "React", "Node.js", "JavaScript", "Tailwind CSS"],
+    tags: [
+      "Full-stack",
+      "React",
+      "Node.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "SpaceX-API",
+    ],
     link: "https://github.com/AbhiVarde/SpaceX-Launch-Tracker",
   },
   {
