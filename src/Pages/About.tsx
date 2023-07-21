@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { motion } from "framer-motion";
 import react from "../assets/blogs/react.png";
 import node from "../assets/blogs/node.jpg";
 import { FiChevronDown } from "react-icons/fi";
@@ -69,14 +70,18 @@ const About = ({ darkMode }: any) => {
 
     if (recipient) {
       window.location.href = "mailto:" + recipient;
-    } else {
-      // Handle other email domains or show an error message
     }
   };
 
   return (
     <div className="flex flex-col max-w-2xl mx-auto mt-4 md:mt-10">
-      <div className="mb-6">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 50 }}
+        transition={{ duration: 0.5 }}
+        className="mb-6"
+      >
         <h1
           className={`font-bold text-3xl md:text-5xl tracking-tight mb-2 ${
             darkMode ? "text-white" : "text-black"
@@ -122,7 +127,7 @@ const About = ({ darkMode }: any) => {
           </a>{" "}
           for more updates and memes.😄
         </p>
-      </div>
+      </motion.div>
       <h1
         className={`font-bold text-2xl md:text-4xl tracking-tight mb-2${
           darkMode ? "text-white" : "text-black"
@@ -135,12 +140,16 @@ const About = ({ darkMode }: any) => {
         with you!
       </p>
       {blogs.map((blog, index) => (
-        <div
+        <motion.div
           key={index}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ duration: 0.5, delay: index * 0.2 }}
           className={`border border-opacity-90 hover:border-gray-500 hover:border-opacity-100 
-      shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-3 mt-4 w-full relative transition-all duration-200 ease-in-out ${
-        darkMode ? "border-zinc-700" : "border-gray-300"
-      }`}
+        shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-3 mt-4 w-full relative transition-all duration-200 ease-in-out ${
+          darkMode ? "border-zinc-700" : "border-gray-300"
+        }`}
         >
           <span
             className={`absolute w-[90%] -top-px left-px h-[2px] bg-gradient-to-r ${
@@ -182,7 +191,7 @@ const About = ({ darkMode }: any) => {
               </p>
             </div>
           </a>
-        </div>
+        </motion.div>
       ))}
       <a
         type="button"
@@ -206,8 +215,12 @@ const About = ({ darkMode }: any) => {
         experience from. 💼✨
       </p>
       {experiences.map((experience, index) => (
-        <div
+        <motion.div
           key={index}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ duration: 0.5, delay: index * 0.2 }}
           className={`border border-opacity-90 hover:border-gray-500 hover:border-opacity-100 
             shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-4 mt-4 mb-6 w-full relative transition-all duration-200 ease-in-out ${
               darkMode ? "border-zinc-700" : "border-gray-300"
@@ -262,7 +275,7 @@ const About = ({ darkMode }: any) => {
               </p>
             ))}
           </div>
-        </div>
+        </motion.div>
       ))}
       <h1
         className={`font-bold text-2xl md:text-4xl tracking-tight mb-2 ${
@@ -271,7 +284,13 @@ const About = ({ darkMode }: any) => {
       >
         Upcoming Projects.
       </h1>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
+      <motion.div
+        className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 50 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         <div
           className={`border border-opacity-90 hover:border-gray-500 hover:border-opacity-100 
             shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-4 w-full relative transition-all duration-200 ease-in-out ${
@@ -315,14 +334,18 @@ const About = ({ darkMode }: any) => {
             make sure to update my creative hub to capture them all.
           </p>
         </div>
-      </div>
-      <h1
+      </motion.div>
+      <motion.h1
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 50 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
         className={`font-bold text-2xl md:text-4xl tracking-tight mb-2 mt-5 ${
           darkMode ? "text-white" : "text-black"
         }`}
       >
         Contact me.
-      </h1>
+      </motion.h1>
       <p className={`${darkMode ? "text-zinc-400" : "text-zinc-900"}`}>
         Email me for inquiries or discussions.
       </p>

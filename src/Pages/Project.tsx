@@ -1,119 +1,7 @@
-import Jukebox from "../assets/projects/Jukebox.png";
-import MentorsDiary from "../assets/projects/MentorsDiary.png";
-import PromptResume from "../assets/projects/PromptResume.png";
-import DevGlimpse from "../assets/projects/DevGlimpse.png";
-import CourseExpert from "../assets/projects/CourseExpert.png";
-import SQL from "../assets/projects/SQL.png";
-import Git from "../assets/projects/Git Wars.png";
-import Tracker from "../assets/projects/Tracker.png";
-import GladPlay from "../assets/projects/GladPlay.png";
-import News from "../assets/projects/news.png";
 import { FiChevronDown } from "react-icons/fi";
 import { useEffect } from "react";
-
-const projects = [
-  {
-    image: Tracker,
-    title: "SpaceX Launch Tracker",
-    description:
-      "Stay informed on upcoming spacex launches, countdowns, and missions for cosmic exploration.",
-    tags: [
-      "Full-stack",
-      "React",
-      "Node.js",
-      "JavaScript",
-      "Tailwind CSS",
-      "SpaceX-API",
-    ],
-    link: "https://github.com/AbhiVarde/SpaceX-Launch-Tracker",
-  },
-  {
-    image: Git,
-    title: "Git Wars",
-    description:
-      "Test your Git skills. Complete tasks, enter commands, and dominate. Become the ultimate Git warrior!",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Git Commands"],
-    link: "https://gitwars.vercel.app/",
-  },
-  {
-    image: GladPlay,
-    title: "GladPay",
-    description:
-      "Effortless, secure payments with GladPay – your seamless, worry-free gateway to financial ease.",
-    tags: [
-      "Front-end",
-      "React",
-      "Vite",
-      "TypeScript",
-      "Tailwind CSS",
-      "Razorpay",
-    ],
-    link: "https://gladpay.vercel.app/",
-  },
-  {
-    image: CourseExpert,
-    title: "CourseExpert",
-    description:
-      "Unleash your potential through diverse online courses. Achieve goals, enhance skills, and transform education.",
-    tags: ["React", "Vite", "Redux", "TypeScript", "Tailwind CSS"],
-    link: "https://courseexpert.vercel.app/",
-  },
-  {
-    image: MentorsDiary,
-    title: "MentorsDiary",
-    description:
-      "Find mentors on a React platform with TypeScript, Tailwind CSS, Redux. Connect, Gain guidance on MentorsDiary",
-    tags: [
-      "Front-end",
-      "React",
-      "Redux",
-      "TypeScript",
-      "Tailwind CSS",
-      "Rest APIs",
-    ],
-    link: "https://mentorsdiary.netlify.app/",
-  },
-  {
-    image: SQL,
-    title: "SQL AI",
-    description:
-      "Supercharge your SQL skills with our AI-powered app. Instantly find answers to your queries.",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "OpenAI API"],
-    link: "https://sqlai.vercel.app/",
-  },
-  {
-    image: Jukebox,
-    title: "JukeBox",
-    description:
-      "Spotify music player web app with React, Tailwind CSS. Search, play, and discover tracks effortlessly.",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Spotify API"],
-    link: "https://jukebox-xi.vercel.app/",
-  },
-  {
-    image: PromptResume,
-    title: "Prompt Resume",
-    description:
-      "Resume generator web app with OpenAI API, React, deployed on Vercel. Stand out with a personalized resume.",
-    tags: ["React", "Vite", "Typescript", "TailwindCSS", "OpenAI API"],
-    link: "https://prompt-resume.vercel.app/",
-  },
-  {
-    image: DevGlimpse,
-    title: "Dev Glimpse",
-    description:
-      " Discover GitHub Finder web app with GitHub API, React, Tailwind CSS. Collaborate with programmers.",
-    tags: ["React", "Vite", "Typescript", "TailwindCSS", "Github API"],
-    link: "https://devglimplse.vercel.app/",
-  },
-  {
-    image: News,
-    title: "NewsXpress",
-    description:
-      "Stay informed with NewsXpress – your reliable source for up-to-date news and updates.",
-    tags: ["React", "JavaScript", "Bootstarp", "News API"],
-    link: "https://github.com/AbhiVarde/React-News-App",
-  },
-];
+import { motion } from "framer-motion";
+import projects from "../assets/Data/projectsData";
 
 const handleProjectClick = (link: any) => {
   window.open(link, "_blank");
@@ -132,15 +20,23 @@ const Project = ({ darkMode }: any) => {
         🔄 Here are a few fictional projects I've worked on. These projects were
         created to enhance my understanding of the technologies I use.
       </p>
-      <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4">
+      <motion.div
+        className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full mt-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         {projects.map((project, index) => (
-          <div
+          <motion.div
             key={index}
             className={`border border-opacity-90 hover:border-gray-500 hover:border-opacity-100 
             shadow-lg cursor-pointer hover:shadow-xl transform hover:-translate-y-1 rounded-xl p-4 w-full relative transition-all duration-200 ease-in-out ${
               darkMode ? "border-zinc-700" : "border-gray-300"
             }`}
             onClick={() => handleProjectClick(project.link)}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <span
               className={`absolute w-[90%] -top-px left-px h-[2px] bg-gradient-to-r ${
@@ -187,9 +83,9 @@ const Project = ({ darkMode }: any) => {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
       <a
         type="button"
         className={`flex items-center text-sm my-4 mx-auto px-4 py-2 rounded-md font-medium ${
