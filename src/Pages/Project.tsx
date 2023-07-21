@@ -6,6 +6,8 @@ import CourseExpert from "../assets/projects/CourseExpert.png";
 import SQL from "../assets/projects/SQL.png";
 import Git from "../assets/projects/Git Wars.png";
 import Tracker from "../assets/projects/Tracker.png";
+import GladPlay from "../assets/projects/GladPlay.png";
+import News from "../assets/projects/news.png";
 import { FiChevronDown } from "react-icons/fi";
 import { useEffect } from "react";
 
@@ -30,8 +32,23 @@ const projects = [
     title: "Git Wars",
     description:
       "Test your Git skills. Complete tasks, enter commands, and dominate. Become the ultimate Git warrior!",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS"],
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Git Commands"],
     link: "https://gitwars.vercel.app/",
+  },
+  {
+    image: GladPlay,
+    title: "GladPay",
+    description:
+      "Effortless, secure payments with GladPay – your seamless, worry-free gateway to financial ease.",
+    tags: [
+      "Front-end",
+      "React",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Razorpay",
+    ],
+    link: "https://gladpay.vercel.app/",
   },
   {
     image: CourseExpert,
@@ -87,6 +104,14 @@ const projects = [
       " Discover GitHub Finder web app with GitHub API, React, Tailwind CSS. Collaborate with programmers.",
     tags: ["React", "Vite", "Typescript", "TailwindCSS", "Github API"],
     link: "https://devglimplse.vercel.app/",
+  },
+  {
+    image: News,
+    title: "NewsXpress",
+    description:
+      "Stay informed with NewsXpress – your reliable source for up-to-date news and updates.",
+    tags: ["React", "JavaScript", "Bootstarp", "News API"],
+    link: "https://github.com/AbhiVarde/React-News-App",
   },
 ];
 
