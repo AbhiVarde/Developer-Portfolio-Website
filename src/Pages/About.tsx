@@ -1,58 +1,9 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import react from "../assets/blogs/react.png";
-import node from "../assets/blogs/node.jpg";
 import { FiChevronDown } from "react-icons/fi";
 import { BiMessageSquareDetail } from "react-icons/bi";
-
-const experiences = [
-  {
-    company: "SolGuruz LLP",
-    role: "Software Engineer Intern",
-    description:
-      "As a software engineering intern, I gained experience with React JS, TypeScript, Redux, and REST API. Proficient in GitLab for version control and collaboration.",
-    skills: [
-      "React",
-      "TypeScript",
-      "Redux",
-      "Tailwind CSS",
-      "Material UI",
-      "GitLab",
-      "Rest APIs",
-    ],
-  },
-  {
-    company: "LetsGrowMore",
-    role: "Web Development Intern",
-    description:
-      "As a web development intern, I successfully completed beginner and intermediate challenges.",
-    skills: ["React", "JavaScript", "HTML", "CSS", "Github"],
-  },
-  {
-    company: "Anon Global foundation",
-    role: "Research Intern",
-    description:
-      "As a Research intern, I gained valuable experience in conducting research, teamwork, and presenting on Digital Transformation in the Crisis.",
-    skills: ["Research", "Canva", "Teamwork", "Life skill"],
-  },
-];
-
-const blogs = [
-  {
-    img: react,
-    title: "How to Build a Chatbot with React JS",
-    description:
-      "👋 Hello Everyone!👨‍💻 I'm Abhi, and it's a pleasure to meet you all. In this article, I'll guide you through the process of creating a chatbot using React JS.",
-    Link: "https://abhivarde.hashnode.dev/how-to-build-a-chatbot-with-react-js",
-  },
-  {
-    img: node,
-    title: "How to create your first Node.js web server ?",
-    description:
-      "Hello Everyone !👋 Abhi here; nice to meet you all. In this article I'm going to walk you through every step you need to take to build your very first..",
-    Link: "https://abhivarde.hashnode.dev/how-to-create-your-first-nodejs-web-server",
-  },
-];
+import experiences from "../assets/Data/Experience";
+import blogs from "../assets/Data/Blog";
 
 const About = ({ darkMode }: any) => {
   useEffect(() => {

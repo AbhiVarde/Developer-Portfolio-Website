@@ -1,9 +1,9 @@
+import { useEffect, useState } from "react";
 import { RoughNotationGroup } from "react-rough-notation";
 import { motion } from "framer-motion";
 import { RainbowHighlight } from "../components/RainbowHghlight";
 import { BsArrow90DegUp } from "react-icons/bs";
 import Profile from "../assets/images/abhi.jpg";
-import { useEffect } from "react";
 
 const Home = ({ darkMode }: any) => {
   const data = [
@@ -13,7 +13,10 @@ const Home = ({ darkMode }: any) => {
     { text: "Learner.", color: "#3B82F6" },
   ];
 
+  const [viewerCount, setViewerCount] = useState<number>(0);
+
   useEffect(() => {
+    setViewerCount((prevCount) => prevCount + 1);
     window.scroll(0, 0);
   }, []);
 
@@ -108,6 +111,25 @@ const Home = ({ darkMode }: any) => {
             </motion.div>
           </motion.div>
         </div>
+      </motion.div>
+
+      {/* Display the viewer count */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 1, duration: 0.5 }}
+        className=" text-center"
+      >
+        <motion.p
+          initial={{ y: 5, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 1.2, duration: 0.5 }}
+          className={`text-sm font-medium ${
+            darkMode ? "text-white" : " text-black"
+          }`}
+        >
+          Total Visitors: {viewerCount}
+        </motion.p>
       </motion.div>
     </div>
   );
