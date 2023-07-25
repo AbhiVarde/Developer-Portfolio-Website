@@ -102,7 +102,7 @@ const Home = ({ darkMode }: any) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8, duration: 0.6 }}
-              className="flex justify-between mt-4"
+              className="flex justify-between mt-4 mb-2 sm:mb-0"
             >
               <div className="flex items-center space-x-4 lg:ml-8">
                 <BsArrow90DegUp className="mb-2" />
@@ -114,6 +114,7 @@ const Home = ({ darkMode }: any) => {
       </motion.div>
 
       {/* Display the viewer count */}
+
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -124,9 +125,7 @@ const Home = ({ darkMode }: any) => {
           initial={{ y: 5, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.5 }}
-          className={`text-sm font-medium ${
-            darkMode ? "text-white" : " text-black"
-          }`}
+          className="text-sm font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-teal-400"
         >
           Total Visitors: {viewerCount}
         </motion.p>
