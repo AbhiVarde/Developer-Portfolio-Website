@@ -8,6 +8,7 @@ import Tracker from "../projects/Tracker.png";
 import GladPlay from "../projects/GladPlay.png";
 import News from "../projects/news.png";
 import Jukebox from "../projects/Jukebox.png";
+import Linktree from "../projects/next.png";
 
 const projects = [
   {
@@ -32,6 +33,14 @@ const projects = [
       "Test your Git skills. Complete tasks, enter commands, and dominate. Become the ultimate Git warrior!",
     tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Git Commands"],
     link: "https://gitwars.vercel.app/",
+  },
+  {
+    image: Linktree,
+    title: "Linktree Clone",
+    description:
+      "Link your digital world effortlessly in one place with Linktree-inspired project – a personalized online hub.",
+    tags: ["Next.js", "TypeScript", "TailwindCSS"],
+    link: "https://linktree-clone-next.vercel.app/",
   },
   {
     image: GladPlay,
