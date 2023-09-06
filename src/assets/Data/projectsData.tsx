@@ -27,20 +27,20 @@ const projects = [
     link: "https://github.com/AbhiVarde/SpaceX-Launch-Tracker",
   },
   {
-    image: Git,
-    title: "Git Wars",
-    description:
-      "Test your Git skills. Complete tasks, enter commands, and dominate. Become the ultimate Git warrior!",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Git Commands"],
-    link: "https://gitwars.vercel.app/",
-  },
-  {
     image: Linktree,
     title: "Linktree Clone",
     description:
       "Link your digital world effortlessly in one place with Linktree-inspired project – a personalized online hub.",
     tags: ["Next.js", "TypeScript", "TailwindCSS"],
     link: "https://linktree-clone-next.vercel.app/",
+  },
+  {
+    image: Git,
+    title: "Git Wars",
+    description:
+      "Test your Git skills. Complete tasks, enter commands, and dominate. Become the ultimate Git warrior!",
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Git Commands"],
+    link: "https://gitwars.vercel.app/",
   },
   {
     image: GladPlay,
@@ -58,12 +58,12 @@ const projects = [
     link: "https://gladpay.vercel.app/",
   },
   {
-    image: CourseExpert,
-    title: "CourseExpert",
+    image: SQL,
+    title: "SQL AI",
     description:
-      "Unleash your potential through diverse online courses. Achieve goals, enhance skills, and transform education.",
-    tags: ["React", "Vite", "Redux", "TypeScript", "Tailwind CSS"],
-    link: "https://courseexpert.vercel.app/",
+      "Supercharge your SQL skills with our AI-powered app. Instantly find answers to your queries.",
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "OpenAI API"],
+    link: "https://sqlai.vercel.app/",
   },
   {
     image: MentorsDiary,
@@ -81,12 +81,12 @@ const projects = [
     link: "https://mentorsdiary.netlify.app/",
   },
   {
-    image: SQL,
-    title: "SQL AI",
+    image: CourseExpert,
+    title: "CourseExpert",
     description:
-      "Supercharge your SQL skills with our AI-powered app. Instantly find answers to your queries.",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "OpenAI API"],
-    link: "https://sqlai.vercel.app/",
+      "Unleash your potential through diverse online courses. Achieve goals, enhance skills, and transform education.",
+    tags: ["React", "Vite", "Redux", "TypeScript", "Tailwind CSS"],
+    link: "https://courseexpert.vercel.app/",
   },
   {
     image: Jukebox,
