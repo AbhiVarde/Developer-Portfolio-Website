@@ -52,13 +52,13 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
         <div className="flex justify-between items-center tracking-wide">
           <div
             className={`block text-lg md:hidden cursor-pointer transition-transform duration-700 ${
-              click ? "rotate-180" : "rotate-0"
+              click ? "rotate-0" : "rotate-180"
             } p-2 rounded-full ${
               darkMode ? "bg-[#1f2937] text-white" : "bg-[#e5e7eb] text-black"
             }`}
             onClick={handleClick}
           >
-            {click ? <RiSunFill /> : <RiMoonFill />}
+            {click ? <RiMoonFill /> : <RiSunFill />}
           </div>
           <div
             className="cursor-pointer text-lg md:text-xl font-bold"
@@ -105,12 +105,12 @@ const Navbar = ({ darkMode, toggleDarkMode }: any) => {
             <div
               onClick={handleClick}
               className={`cursor-pointer p-2 rounded-full transition-transform duration-700 ${
-                click ? "rotate-180" : "rotate-0"
+                click ? "rotate-0" : "rotate-180"
               } ${
                 darkMode ? "bg-[#1f2937] text-white" : "bg-[#e5e7eb] text-black"
               }`}
             >
-              {click ? <RiSunFill /> : <RiMoonFill />}
+              {click ? <RiMoonFill /> : <RiSunFill />}
             </div>
             <button
               className={`py-1 px-4 border-2 border-gray-400 ${
