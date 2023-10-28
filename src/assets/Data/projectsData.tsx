@@ -1,14 +1,13 @@
 import MentorsDiary from "../projects/MentorsDiary.png";
-import PromptResume from "../projects/PromptResume.png";
-import DevGlimpse from "../projects/DevGlimpse.png";
 import CourseExpert from "../projects/CourseExpert.png";
 import SQL from "../projects/SQL.png";
 import Git from "../projects/Git Wars.png";
 import Tracker from "../projects/Tracker.png";
 import GladPlay from "../projects/GladPlay.png";
-import News from "../projects/news.png";
 import Jukebox from "../projects/Jukebox.png";
-import Linktree from "../projects/next.png";
+import Linktree from "../projects/Linktree.png";
+import Trello from "../projects/Trello.png";
+import Resume from "../projects/PromptResume.png";
 
 const projects = [
   {
@@ -27,12 +26,12 @@ const projects = [
     link: "https://github.com/AbhiVarde/SpaceX-Launch-Tracker",
   },
   {
-    image: Linktree,
-    title: "Linktree Clone",
+    image: Trello,
+    title: "Trello Clone",
     description:
-      "Link your digital world effortlessly in one place with Linktree-inspired project – a personalized online hub.",
-    tags: ["Next.js", "TypeScript", "TailwindCSS"],
-    link: "https://linktree-clone-next.vercel.app/",
+      "Created a Trello-inspired clone with Next.js, Tailwind, TypeScript, and drag-and-drop functionality for seamless project management experience.",
+    tags: ["Front-end", "Next.js", "TypeScript", "TailwindCSS"],
+    link: "https://trello-bice.vercel.app/",
   },
   {
     image: Git,
@@ -41,6 +40,22 @@ const projects = [
       "Test your Git skills. Complete tasks, enter commands, and dominate. Become the ultimate Git warrior!",
     tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Git Commands"],
     link: "https://gitwars.vercel.app/",
+  },
+  {
+    image: Linktree,
+    title: "Linktree Clone",
+    description:
+      "Link your digital world effortlessly in one place with Linktree-inspired project – a personalized online hub.",
+    tags: ["Next.js", "TypeScript", "TailwindCSS"],
+    link: "https://linktree-clone-next.vercel.app/",
+  },
+  {
+    image: SQL,
+    title: "SQL AI",
+    description:
+      "Supercharge your SQL skills with our AI-powered app. Instantly find answers to your queries.",
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "OpenAI API"],
+    link: "https://sqlai.vercel.app/",
   },
   {
     image: GladPlay,
@@ -58,14 +73,6 @@ const projects = [
     link: "https://gladpay.vercel.app/",
   },
   {
-    image: SQL,
-    title: "SQL AI",
-    description:
-      "Supercharge your SQL skills with our AI-powered app. Instantly find answers to your queries.",
-    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "OpenAI API"],
-    link: "https://sqlai.vercel.app/",
-  },
-  {
     image: MentorsDiary,
     title: "MentorsDiary",
     description:
@@ -81,14 +88,6 @@ const projects = [
     link: "https://mentorsdiary.netlify.app/",
   },
   {
-    image: CourseExpert,
-    title: "CourseExpert",
-    description:
-      "Unleash your potential through diverse online courses. Achieve goals, enhance skills, and transform education.",
-    tags: ["React", "Vite", "Redux", "TypeScript", "Tailwind CSS"],
-    link: "https://courseexpert.vercel.app/",
-  },
-  {
     image: Jukebox,
     title: "JukeBox",
     description:
@@ -97,28 +96,20 @@ const projects = [
     link: "https://jukebox-xi.vercel.app/",
   },
   {
-    image: PromptResume,
+    image: CourseExpert,
+    title: "CourseExpert",
+    description:
+      "Unleash your potential through diverse online courses. Achieve goals, enhance skills, and transform education.",
+    tags: ["React", "Vite", "Redux", "TypeScript", "Tailwind CSS"],
+    link: "https://courseexpert.vercel.app/",
+  },
+  {
+    image: Resume,
     title: "Prompt Resume",
     description:
       "Resume generator web app with OpenAI API, React, deployed on Vercel. Stand out with a personalized resume.",
-    tags: ["React", "Vite", "Typescript", "TailwindCSS", "OpenAI API"],
+    tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "OpenAI API"],
     link: "https://prompt-resume.vercel.app/",
-  },
-  {
-    image: DevGlimpse,
-    title: "Dev Glimpse",
-    description:
-      " Discover GitHub Finder web app with GitHub API, React, Tailwind CSS. Collaborate with programmers.",
-    tags: ["React", "Vite", "Typescript", "TailwindCSS", "Github API"],
-    link: "https://devglimplse.vercel.app/",
-  },
-  {
-    image: News,
-    title: "NewsXpress",
-    description:
-      "Stay informed with NewsXpress – your reliable source for up-to-date news and updates.",
-    tags: ["React", "JavaScript", "Bootstarp", "News API"],
-    link: "https://github.com/AbhiVarde/React-News-App",
   },
 ];
 
