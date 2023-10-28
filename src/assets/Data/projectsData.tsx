@@ -47,7 +47,7 @@ const projects = [
     description:
       "Link your digital world effortlessly in one place with Linktree-inspired project – a personalized online hub.",
     tags: ["Next.js", "TypeScript", "TailwindCSS"],
-    link: "https://linktree-clone-next.vercel.app/",
+    link: "https://github.com/AbhiVarde/Linktree-Clone",
   },
   {
     image: SQL,
