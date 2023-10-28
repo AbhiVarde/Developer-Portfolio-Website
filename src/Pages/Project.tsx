@@ -11,6 +11,7 @@ const Project = ({ darkMode }: any) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div className="flex flex-col max-w-2xl mx-auto mt-4 md:mt-10">
       <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4">
