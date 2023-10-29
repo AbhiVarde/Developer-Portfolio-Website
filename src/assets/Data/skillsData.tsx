@@ -10,16 +10,16 @@ import {
   SiGitlab,
   SiHtml5,
   SiCss3,
+  SiNextdotjs,
+  SiShopify,
 } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 
 const skills = [
-  { name: "React", icon: <FaReact size={30} color="#61DAFB" /> },
-  { name: "Node.js", icon: <FaNodeJs size={30} color="#339933" /> },
+  { name: "React / React Native", icon: <FaReact size={30} color="#61DAFB" /> },
+  { name: "Next.js", icon: <SiNextdotjs size={26} /> },
   { name: "JavaScript", icon: <SiJavascript size={30} color="#F7DF1E" /> },
   { name: "TypeScript", icon: <SiTypescript size={30} color="#3178C6" /> },
-  { name: "Python", icon: <SiPython size={30} color="#3776AB" /> },
-  { name: "Redux", icon: <FaReact size={30} color="#764ABC" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss size={30} color="#06B6D4" /> },
   {
     name: "Material UI",
@@ -42,11 +42,15 @@ const skills = [
       </svg>
     ),
   },
+  { name: "Node.js", icon: <FaNodeJs size={30} color="#339933" /> },
+  { name: "Python", icon: <SiPython size={30} color="#3776AB" /> },
+  { name: "Redux", icon: <FaReact size={30} color="#764ABC" /> },
+  { name: "Shopify", icon: <SiShopify size={30} color="#339933" /> },
+  { name: "MongoDB", icon: <DiMongodb size={30} color="#47A248" /> },
   {
     name: "MySQL",
     icon: <SiMysql size={30} color="#f29111" />,
   },
-  { name: "MongoDB", icon: <DiMongodb size={30} color="#47A248" /> },
   {
     name: "Google Cloud",
     icon: (
