@@ -19,7 +19,7 @@ function App() {
       <div
         className={`flex flex-col min-h-screen ${
           darkMode ? "bg-[#121212] text-white" : "bg-white text-black"
-        } font-Nunito transition-colors duration-300`}
+        } font-Varela transition-colors duration-300`}
       >
         <div className="sticky top-0 z-50">
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />

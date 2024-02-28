@@ -1,17 +1,5 @@
-import MentorsDiary from "../projects/MentorsDiary.png";
-import CourseExpert from "../projects/CourseExpert.png";
-import SQL from "../projects/SQL.png";
-import Git from "../projects/Git Wars.png";
-import Tracker from "../projects/Tracker.png";
-import GladPlay from "../projects/GladPlay.png";
-import Jukebox from "../projects/Jukebox.png";
-import Linktree from "../projects/Linktree.png";
-import Trello from "../projects/Trello.png";
-import Resume from "../projects/PromptResume.png";
-
 const projects = [
   {
-    image: Tracker,
     title: "SpaceX Launch Tracker",
     description:
       "Stay informed on upcoming spacex launches, countdowns, and missions for cosmic exploration.",
@@ -26,7 +14,6 @@ const projects = [
     link: "https://github.com/AbhiVarde/SpaceX-Launch-Tracker",
   },
   {
-    image: Trello,
     title: "Trello Clone",
     description:
       "Created a Trello-inspired clone with Next.js, Tailwind, TypeScript, and drag-and-drop functionality for seamless project management experience.",
@@ -34,7 +21,6 @@ const projects = [
     link: "https://trello-bice.vercel.app/",
   },
   {
-    image: Git,
     title: "Git Wars",
     description:
       "Test your Git skills. Complete tasks, enter commands, and dominate. Become the ultimate Git warrior!",
@@ -42,7 +28,6 @@ const projects = [
     link: "https://gitwars.vercel.app/",
   },
   {
-    image: Linktree,
     title: "Linktree Clone",
     description:
       "Link your digital world effortlessly in one place with Linktree-inspired project – a personalized online hub.",
@@ -50,7 +35,6 @@ const projects = [
     link: "https://github.com/AbhiVarde/Linktree-Clone",
   },
   {
-    image: SQL,
     title: "SQL AI",
     description:
       "Supercharge your SQL skills with our AI-powered app. Instantly find answers to your queries.",
@@ -58,7 +42,6 @@ const projects = [
     link: "https://sqlai.vercel.app/",
   },
   {
-    image: GladPlay,
     title: "GladPay",
     description:
       "Effortless, secure payments with GladPay – your seamless, worry-free gateway to financial ease.",
@@ -73,7 +56,6 @@ const projects = [
     link: "https://gladpay.vercel.app/",
   },
   {
-    image: MentorsDiary,
     title: "MentorsDiary",
     description:
       "Find mentors on a React platform with TypeScript, Tailwind CSS, Redux. Connect, Gain guidance on MentorsDiary",
@@ -88,7 +70,6 @@ const projects = [
     link: "https://mentorsdiary.netlify.app/",
   },
   {
-    image: Jukebox,
     title: "JukeBox",
     description:
       "Spotify music player web app with React, Tailwind CSS. Search, play, and discover tracks effortlessly.",
@@ -96,7 +77,6 @@ const projects = [
     link: "https://jukebox-xi.vercel.app/",
   },
   {
-    image: CourseExpert,
     title: "CourseExpert",
     description:
       "Unleash your potential through diverse online courses. Achieve goals, enhance skills, and transform education.",
@@ -104,7 +84,6 @@ const projects = [
     link: "https://courseexpert.vercel.app/",
   },
   {
-    image: Resume,
     title: "Prompt Resume",
     description:
       "Resume generator web app with OpenAI API, React, deployed on Vercel. Stand out with a personalized resume.",

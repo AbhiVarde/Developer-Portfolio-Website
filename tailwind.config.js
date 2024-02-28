@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Nunito: ["Nunito", "sans-serif"],
+        Varela: ["Varela Round", "sans-serif"],
       },
     },
   },
