@@ -3,7 +3,7 @@ const experiences = [
     company: "UniQual iTech",
     role: "Jr Web Developer",
     description:
-      "At UniQual iTech, I work primarily as a frontend developer, proficient in JavaScript, React, MUI/Tailwind CSS, and REST API. For backend, I utilize Node.js, Knex.js, Express.js, and MySQL. Collaborating via GitLab, I contribute to feature implementation, bug fixes, and meeting project deadlines.",
+      "At UniQual iTech, I develop frontend with JavaScript, React, MUI/Tailwind CSS, and REST API, and backend with Node.js, Knex.js, Express.js, and MySQL. I contribute via GitLab to feature implementation, bug fixes, and project deadlines.",
     skills: [
       "React",
       "JavaScript",
