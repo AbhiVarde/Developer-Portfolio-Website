@@ -5,7 +5,7 @@ import Git from "../projects/Git Wars.png";
 import Tracker from "../projects/Tracker.png";
 import GladPlay from "../projects/GladPlay.png";
 import Jukebox from "../projects/Jukebox.png";
-import Linktree from "../projects/next.png";
+import Linktree from "../projects/Linktree.png";
 import Trello from "../projects/Trello.png";
 import Resume from "../projects/PromptResume.png";
 
